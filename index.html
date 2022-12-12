@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Typing Speed Test Game</title>
+  <link rel='stylesheet' href='style.css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+  <link rel ="icon" type = "image/x-icon" href ="https://cdn-icons-png.flaticon.com/512/3003/3003202.png">
+
+</head>
+<body>
+  <div class="game">
+    <div class="name">Typing Speed Test Game</div>
+    <div class="container">
+      <div class="message">
+        <label for='select'></label>
+        <select id='select' onchange='getValue();'>
+          <option value='Easy'>Easy</option>
+          <option value='Normal'>Normal</option>
+          <option value='Hard'>Hard</option>
+        </select>
+        <span class="seconds"></span>
+      </div>
+
+      <div class="start">Start Playing</div>
+      <div class="the-word"></div>
+      <label for='inp'></label>
+      <input id='inp' type="text" class="input" />
+      <div class="upcoming-words">Words Will Show Here</div>
+      <div class="control">
+        <div class="time">Time Left: <span></span> Seconds</div>
+        <div class="score">
+          <button class="replay" disabled>
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          Score: <span class="got">0</span> From <span class="total"></span>
+        </div>
+      </div>
+      <div class="finish"></div>
+    </div>
+  </div>
+  <script src='main.js'></script>
+</body>
+</html>
+
+

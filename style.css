@@ -1,0 +1,126 @@
+:root {--main-color: #2196f3;}
+
+* {box-sizing: border-box;margin: 0;padding: 0;}
+
+body {font-family: "Open Sans", sans-serif;background: #eeeeee;}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    text-align: center;
+}
+
+.game .name{
+    border-top: 4px solid #35363a;
+    width: 100%;
+    font-weight: bolder;
+    color: #fff;
+    background: var(--main-color);
+    padding: 20px;
+    font-size: 25px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.message{
+    border-radius: 10px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.message span {font-weight: bold;color: #009688;float: right;padding: .25em;}
+
+.message span::before {content: "Timer:";}
+
+select {
+    margin: 0;
+    float: left;
+    width: 20%;
+    padding: .25em;
+    border: 0;
+    border-bottom: 2px solid currentcolor;
+    font-weight: bold;
+    letter-spacing: .15em;
+    border-radius: 0;
+    outline: none;
+}
+
+.start{
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    background: #009688;
+}
+
+input{
+    margin-top: -15px;
+    border-radius: 10px;
+    border: 3px solid var(--main-color);
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    caret-color: var(--main-color);/*New*/
+}
+
+input:focus{outline: none;}
+
+.the-word {
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+    user-select: none;
+}
+
+.upcoming-words{
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.upcoming-words div {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.control{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+    background: #fff;
+}
+
+.control span {font-weight: bold;color: #009688;}
+
+.finish {font-weight: bold;font-size: 40px;padding: 15px;}
+
+.finish .good {color: var(--main-color);}
+
+.finish .bad {color: red;}
+
+.score button {
+    /*display: none;*/
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    width: 30px;
+    height: 22px;
+    background: #009688;
+    border: none;
+}
